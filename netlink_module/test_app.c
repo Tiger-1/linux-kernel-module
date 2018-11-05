@@ -30,7 +30,7 @@ int main(int argc, char **argv){
 	nlh->nlmsg_pid = getpid();
 	nlh->nlmsg_flags = 0;
 
-	strcpy(NLMSG_DATA(nlh), "Jai mata di rocks");
+	strcpy(NLMSG_DATA(nlh), "Hello, Kernel");
 
 	iov.iov_base = (void *)nlh;
 	iov.iov_len = nlh->nlmsg_len;
